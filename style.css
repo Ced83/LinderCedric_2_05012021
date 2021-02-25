@@ -66,6 +66,7 @@ body {
 .link a {
     text-decoration: none;
     color: black;
+    padding-left: 30px;
 }
 
 .blue {
@@ -73,6 +74,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+    width: 8%;
 }
 
 /** Search Part **/
@@ -151,13 +153,14 @@ body {
     color: black;
 }
 
-.search__container .filter_container .filters {
+.search__container .filter_container .filters{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 11px;
+    
 } 
 
-.search__container .filter_container .filters .filter_icon {
+.search__container .filter_container .filters .filter_icon{
     height: 45px;
     display: flex;
     align-items: center;
@@ -167,6 +170,11 @@ body {
     border: 1px solid silver;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+.filter_icon:hover{
+    text-decoration: none;
+    color: #0065FC;
+    cursor: pointer;
 }
 
 .search__container .filter_container .filters .filter_icon p {
@@ -520,6 +528,8 @@ body {
     }
     .header__container .navigateur .link {
         color: white;
+        display: flex;
+        justify-content: space-between;
        
     }
     } 
@@ -585,6 +595,7 @@ body {
         width: 80%;
         height: 60px;
     }
+    
 
     .filter_container .filters{
         height: 50px;
@@ -594,10 +605,11 @@ body {
     }
     .search__container .filter_container .filters .filter_icon{
         height: 35px;
+    
     }
+
     .search__container .filter_container .filters .filter_icon i{
-        left: -3px;
-        z-index: 10;
+        
         border-radius: 50px;
         position: absolute;
         font-size: 15px;
@@ -606,7 +618,6 @@ body {
         height: 40px;
         width: 45px;
         display: flex;
-        top: -3px;
         align-items: center;
         justify-content: center;
     }
@@ -643,10 +654,11 @@ body {
     .flat-container{
         display: flex;
     background-color: #F2F2F2;
-    width: 60%;
+    width: 61%;
     flex-flow: wrap;
     justify-content: space-between;
     border-radius: 20px;
+    margin-left: 20px;
     }
     .flat-container .item__container{
         width: 30%;
@@ -658,7 +670,7 @@ body {
     }
     
     .item__container{
-        width: 95%;
+        width: 99%;
     }
     .stars{
         margin-top: -10px;
@@ -706,8 +718,8 @@ body {
 
     .Activity_container .img-activities .item-container-activity {
         width: 100%;
-        height:130px;
-        margin-bottom: 75px;
+        height: 157px;
+        margin-bottom: 20px;
     }
 
     .Activity_container .item-container-activity .img-activity {
