@@ -43,6 +43,7 @@ body {
 .header__container .navigateur ul {
     padding-left: 0;
     display: flex;
+    list-style-type: none;
 }
 
 .header__container .navigateur .link {
@@ -55,8 +56,10 @@ body {
 }
 
 .navigateur .link:hover {
-    border-bottom-color: blue;
+    border-bottom-color: #0065FC;
+    color:  #0065FC;
 }
+
 
 .navigateur .link:hover a {
     color:  #0065FC;
@@ -74,7 +77,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    width: 8%;
+    
 }
 
 /** Search Part **/
@@ -170,6 +173,7 @@ body {
     border: 1px solid silver;
     margin-right: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 .filter_icon:hover{
     text-decoration: none;
@@ -177,9 +181,6 @@ body {
     cursor: pointer;
 }
 
-.search__container .filter_container .filters .filter_icon p {
-    font-weight: bold;
-}
 
 .search__container .filter_container .filters .filter_icon i {
     left: -3px;
@@ -383,6 +384,7 @@ body {
     padding-top: 20px;
     font-weight: bold;
     font-size: 18px;
+    width: 100%;
 }
  
 .Activity_container {
@@ -487,7 +489,6 @@ body {
 
 #bloc_informations h4{
     font-size: 19px;
-    width: 100%;
     padding-left: 50px;
     padding-top: 30px;
   }
@@ -692,11 +693,27 @@ body {
         margin-left: 2%;
 
     }
-
-    .img-11{
-        height: 400px;
+    .img-10, .img-13{
+        height: 306px;
     }
 
+    .img-11{
+        height: 160px;
+    }
+
+    .img-12{
+        height: 80px;
+    }
+
+    .img-14{
+        height: 100px;
+    }
+
+    .img-15{
+        height: 140px;
+    }
+
+    
     .Activity_container{
         display: flex;
         flex-direction: row;
@@ -718,29 +735,20 @@ body {
 
     .Activity_container .img-activities .item-container-activity {
         width: 100%;
-        height: 157px;
         margin-bottom: 20px;
     }
 
     .Activity_container .item-container-activity .img-activity {
-        height: 280px;
         width: 100%;
     }
 
     .Activity_container .img-activities, .Activity_container .item-container-activity {
         width: 100%;
-        height: 335px;
         margin-right: 20px;
-        margin-bottom: 1px;
+        
     }
 
-    .Activity_container .img-activities .item-container-activity:nth-of-type(1) .img-activity {
-        height: 215px;
-    }
-
-    .Activity_container .img-activities .item-container-activity:nth-of-type(2) .img-activity {
-        height: 100px;
-    }
+    
     .item-container-activity h4{
         height: 5px;
         font-size: 15px;
