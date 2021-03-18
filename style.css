@@ -11,6 +11,26 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.item__container a {
+    width: 100%;
+    height: 100%; 
+}
+
+.item-container-famous a {
+    display: flex;
+}
+
+#bloc_page {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
 /** Common **/
 .item__container {
     border: 6px solid white;
@@ -38,6 +58,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .header__container .navigateur ul {
@@ -47,7 +68,8 @@ body {
 }
 
 .header__container .navigateur .link {
-    padding: 15px 0;
+    padding: 25px 0 0 0;
+    margin-top: -12px;
     font-size: 16px;
     color: transparent;
     width: 50%;
@@ -148,19 +170,19 @@ body {
     background-color: white;
     flex-direction: column;
     margin-bottom: 13px;
+    margin-top: 30px
 }
 
 .search__container .filter_container .title_filter {
     font-weight: bold;
     font-size: 19px;
     color: black;
+    margin-right: 20px
 }
 
 .search__container .filter_container .filters{
     display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 11px;
-    
+    flex-wrap: wrap;    
 } 
 
 .search__container .filter_container .filters .filter_icon{
@@ -272,7 +294,7 @@ body {
     width: 50%;
 }
 
-.populaires_container .item-container-famous .title-price-stars-item-container h4 {
+.populaires_container .item-container-famous .title-price-stars-item-container h3 {
     margin-top: 10px;
     margin-bottom: 0;
     font-weight: bold;
@@ -360,7 +382,7 @@ body {
     width: 100%;
 }
 
-.title-price-stars-flat-container h4{
+.title-price-stars-flat-container h3{
     margin: 0px;
     padding-top: 10px;
     margin-bottom: -12px;
@@ -465,7 +487,7 @@ body {
     
 }
 
-.item-container-activity h4{
+.item-container-activity h3{
     display: flex;
     justify-content: flex-start;
     font-size: 16px;
@@ -477,8 +499,6 @@ body {
 #bloc_informations{
     background-color: #F2F2F2;
     padding-bottom: 17px;
-    width: 108%;
-    margin-left: -8px;
 }
 
 #bloc_informations li{
@@ -487,7 +507,7 @@ body {
     padding-bottom: 6px;
 }
 
-#bloc_informations h4{
+#bloc_informations h3{
     font-size: 19px;
     padding-left: 50px;
     padding-top: 30px;
@@ -576,20 +596,10 @@ body {
         border-bottom-left-radius: 0px;
     }
 
-    .search__container .filter_container{
-        height: 60px;
-        padding-top: 10px;
-    }
-
-    .filter_container{
+    .search__container .filter_container {
         flex-direction: row;
         align-items: center;
         width: 100%;
-    }
-    .title_filter{
-        width: 100%;
-        position: absolute;
-        left: 20px;
     }
     .filters{
         margin-top: 10px;
@@ -599,14 +609,8 @@ body {
     
 
     .filter_container .filters{
-        height: 50px;
-        width: 80%;
         display: flex;
         flex-direction: row;
-    }
-    .search__container .filter_container .filters .filter_icon{
-        height: 35px;
-    
     }
 
     .search__container .filter_container .filters .filter_icon i{
@@ -616,8 +620,8 @@ body {
         font-size: 15px;
         color: #0065FC;
         background-color: #DEEBFF;
-        height: 40px;
-        width: 45px;
+        height: 49px;
+        width: 49px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -693,6 +697,11 @@ body {
         margin-left: 2%;
 
     }
+
+    .img-activities a {
+        width: 220px;
+    }
+
     .img-10, .img-13{
         height: 306px;
     }
@@ -717,8 +726,8 @@ body {
     .Activity_container{
         display: flex;
         flex-direction: row;
-        width: 97%;
         padding-bottom: 30px;
+        justify-content: space-around;
     }
 
     .Activity_container .img-activities {
@@ -739,17 +748,17 @@ body {
     }
 
     .Activity_container .item-container-activity .img-activity {
-        width: 100%;
+        width: 220px;
     }
 
     .Activity_container .img-activities, .Activity_container .item-container-activity {
-        width: 100%;
+        width: 220px;
         margin-right: 20px;
         
     }
 
     
-    .item-container-activity h4{
+    .item-container-activity h3{
         height: 5px;
         font-size: 15px;
     }
@@ -778,3 +787,18 @@ body {
     }
 }
 
+@media all and (max-width:991px){ 
+    .flat-container a {
+        flex-direction: column;
+    }
+    
+    .item__container a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .Activity_container a {
+        width: 100%;
+    }
+}
